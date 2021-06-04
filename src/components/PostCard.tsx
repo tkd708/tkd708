@@ -11,6 +11,7 @@ import styled from '@emotion/styled';
 import { colors } from '../styles/colors';
 import { PageContext } from '../templates/post';
 import { AuthorList } from './AuthorList';
+import { PostCardTags } from './PostCardTags';
 
 export interface PostCardProps {
   post: PageContext;
@@ -19,9 +20,7 @@ export interface PostCardProps {
 
 export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
   const date = new Date(post.frontmatter.date);
-  // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
-  // 20 AUG 2018
   const displayDatetime = format(date, 'dd LLL yyyy');
 
   return (
@@ -61,7 +60,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
           </PostCardExcerpt>
         </Link>
         <PostCardMeta className="post-card-meta">
-          <AuthorList authors={post.frontmatter.author} tooltip="small" />
+          {/* <AuthorList authors={post.frontmatter.author} tooltip="small" /> */}
           <PostCardBylineContent className="post-card-byline-content">
             <span>
               {post.frontmatter.author.map((author, index) => {
@@ -77,6 +76,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
               <time dateTime={datetime}>{displayDatetime}</time>{' '}
               <span className="bull">&bull;</span> {post.fields.readingTime.text}
             </span>
+            <PostCardTags tags={post.frontmatter.tags.slice(1)} />
           </PostCardBylineContent>
         </PostCardMeta>
       </PostCardContent>

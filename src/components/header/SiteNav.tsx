@@ -86,17 +86,23 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
         {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         <nav css={SiteNavStyles}>
           <SiteNavLeft className="site-nav-left">
-            {!isHome && <SiteNavLogo />}
+            {null && !isHome && <SiteNavLogo />}
             <SiteNavContent css={[this.state.showTitle ? HideNav : '']}>
               <ul css={NavStyles} role="menu">
                 <li role="menuitem">
-                  <Link to="/" activeClassName="nav-current">Home</Link>
+                  <Link to="/" activeClassName="nav-current">
+                    Home
+                  </Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="/about" activeClassName="nav-current">About</Link>
+                  <Link to="/about" activeClassName="nav-current">
+                    About
+                  </Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="/tags/getting-started/" activeClassName="nav-current">Getting Started</Link>
+                  <Link to="/portfolio" activeClassName="nav-current">
+                    Portfolio
+                  </Link>
                 </li>
               </ul>
               {isPost && (
@@ -107,6 +113,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             </SiteNavContent>
           </SiteNavLeft>
           <SiteNavRight>
+            {/* 
             <SocialLinks>
               {config.facebook && (
                 <a
@@ -135,6 +142,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
             )}
+            */}
           </SiteNavRight>
         </nav>
       </>

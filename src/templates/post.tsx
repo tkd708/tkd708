@@ -20,6 +20,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
+import { PostTags } from '../components/PostTags';
 
 export interface Author {
   id: string;
@@ -204,7 +205,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullCustomExcerpt>
                 <PostFullByline className="post-full-byline">
                   <section className="post-full-byline-content">
-                    <AuthorList authors={post.frontmatter.author} tooltip="large" />
+                    {/* <AuthorList authors={post.frontmatter.author} tooltip="large" /> */}
                     <section className="post-full-byline-meta">
                       <h4 className="author-name">
                         {post.frontmatter.author.map(author => (
@@ -218,12 +219,14 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                           {displayDatetime}
                         </time>
                         <span className="byline-reading-time">
-                          <span className="bull">&bull;</span>{post.fields.readingTime.text}
+                          <span className="bull">&bull;</span>
+                          {post.fields.readingTime.text}
                         </span>
                       </div>
                     </section>
                   </section>
                 </PostFullByline>
+                <PostTags tags={post.frontmatter.tags.slice(1)} />
               </PostFullHeader>
 
               {post.frontmatter.image?.childImageSharp && (
@@ -237,8 +240,9 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
               )}
               <PostContent htmlAst={post.htmlAst} />
 
-              {/* The big email subscribe modal content */}
+              {/* The big email subscribe modal content 
               {config.showSubscribe && <Subscribe title={config.title} />}
+              */}
             </article>
           </div>
         </main>
