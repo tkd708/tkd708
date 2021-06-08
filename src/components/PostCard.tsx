@@ -11,7 +11,7 @@ import styled from '@emotion/styled';
 import { colors } from '../styles/colors';
 import { PageContext } from '../templates/post';
 import { AuthorList } from './AuthorList';
-import { PostCardTags } from './PostCardTags';
+import { TagList } from './TagList';
 
 export interface PostCardProps {
   post: PageContext;
@@ -59,6 +59,19 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
             <p>{post.frontmatter.excerpt || post.excerpt}</p>
           </PostCardExcerpt>
         </Link>
+        {/* 
+        <div
+          style={{
+            padding: '0px 0px',
+            margin: '0px 0px',
+            maxHeight: '30px',
+            overflowY: 'hidden',
+            overflowX: 'hidden',
+          }}
+        >
+          <TagList tags={post.frontmatter.tags.slice(1)} primary={false} nowrap />
+        </div>
+        */}
         <PostCardMeta className="post-card-meta">
           {/* <AuthorList authors={post.frontmatter.author} tooltip="small" /> */}
           <PostCardBylineContent className="post-card-byline-content">
@@ -76,7 +89,6 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
               <time dateTime={datetime}>{displayDatetime}</time>{' '}
               <span className="bull">&bull;</span> {post.fields.readingTime.text}
             </span>
-            <PostCardTags tags={post.frontmatter.tags.slice(1)} />
           </PostCardBylineContent>
         </PostCardMeta>
       </PostCardContent>

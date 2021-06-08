@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import { FixedObject } from 'gatsby-image';
 import React from 'react';
 import { Helmet } from 'react-helmet';
@@ -25,6 +25,8 @@ import {
 } from '../styles/shared';
 import config from '../website-config';
 import { PageContext } from './post';
+import _ from 'lodash';
+import { TagList } from '../components/TagList';
 
 export interface IndexProps {
   pageContext: {
@@ -52,6 +54,54 @@ export interface IndexProps {
 
 const IndexPage: React.FC<IndexProps> = props => {
   const { width, height } = props.data.header.childImageSharp.fixed;
+
+  const [allTags, setAllTags] = React.useState<string[]>([]);
+  const [allCategories, setAllCategories] = React.useState<any[]>([]);
+
+  const fetchAllTags = () => {
+    // Tag
+    const tags: string[] = [];
+    props.data.allTags.edges.map(
+      (post, index) => tags.push(...post.node.frontmatter.tags.slice(1)), // [0] is primary tag = category
+    );
+    //const tagsUnique = [...new Set(tags)];
+    const tagCounts = [];
+    tags.forEach(tag => {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    });
+    const tagCountArray = [];
+    Object.entries(tagCounts).forEach(([key, value]) => {
+      const tagCount = { name: key, count: value };
+      tagCountArray.push(tagCount);
+    });
+    tagCountArray.sort(function (a, b) {
+      return a.count > b.count ? -1 : 1;
+    });
+    setAllTags(tagCountArray);
+
+    // Category = primary tag
+    const categories: string[] = [];
+    props.data.allTags.edges.map(
+      (post, index) => categories.push(...post.node.frontmatter.tags.slice(0, 1)), // [0] is primary tag = category
+    );
+    const categoryCounts = [];
+    categories.forEach(category => {
+      categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+    });
+    const categoryCountArray = [];
+    Object.entries(categoryCounts).forEach(([key, value]) => {
+      const categoryCount = { name: key, count: value };
+      categoryCountArray.push(categoryCount);
+    });
+    categoryCountArray.sort(function (a, b) {
+      return a.count > b.count ? -1 : 1;
+    });
+    setAllCategories(categoryCountArray);
+  };
+
+  React.useEffect(() => {
+    fetchAllTags();
+  }, []);
 
   return (
     <IndexLayout css={HomePosts}>
@@ -118,7 +168,32 @@ const IndexPage: React.FC<IndexProps> = props => {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={[inner, Posts]}>
             <div css={[PostFeed]}>
+              <div
+                style={{
+                  padding: '5px 20px',
+                  margin: '10px 0px',
+                  maxHeight: '100px',
+                  overflowY: 'auto',
+                }}
+              >
+                <TagList tags={allCategories} primary nowrap={false} />
+              </div>
+
+              <div
+                style={{
+                  padding: '5px 20px',
+                  margin: '10px 0px',
+                  maxHeight: '100px',
+                  overflowY: 'auto',
+                }}
+              >
+                <TagList tags={allTags} primary={false} nowrap={false} />
+              </div>
+
+              <p css={FeedTitle}>Latest posts</p>
+
               {props.data.allMarkdownRemark.edges.map((post, index) => {
+                // filter by tags
                 // filter out drafts in production
                 return (
                   (post.node.frontmatter.draft !== true ||
@@ -145,7 +220,7 @@ const IndexPage: React.FC<IndexProps> = props => {
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/logo_initial2.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -154,12 +229,24 @@ export const pageQuery = graphql`
         }
       }
     }
-    header: file(relativePath: { eq: "img/blog-cover.png" }) {
+    header: file(relativePath: { eq: "img/ibague_field2.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
         fixed(width: 2000, quality: 100) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    allTags: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            tags
+          }
         }
       }
     }
@@ -267,6 +354,19 @@ const HomePosts = css`
       font-size: 1.8rem;
       line-height: 1.5em;
     }
+  }
+`;
+
+const FeedTitle = css`
+  align-self: center;
+  margin: 5vh;
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1em;
+  font-weight: 300;
+
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
 `;
 

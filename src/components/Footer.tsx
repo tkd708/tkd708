@@ -12,7 +12,8 @@ export const Footer: React.FC = () => {
   return (
     <footer css={[outer, SiteFooter]}>
       <div css={[inner, SiteFooterContent]}>
-        <section className="copyright">
+        {/* 
+        <section className="copyright"> 
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
             <Link to="/">
@@ -20,8 +21,12 @@ export const Footer: React.FC = () => {
             </Link>
           )}
         </section>
+         */}
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
+          <Link to="/about">About</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          {/* 
           {config.facebook && (
             <a href={config.facebook} target="_blank" rel="noopener noreferrer">
               Facebook
@@ -32,12 +37,16 @@ export const Footer: React.FC = () => {
               Twitter
             </a>
           )}
-
-          <a href="https://github.com/scttcper/gatsby-casper" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/scttcper/gatsby-casper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Casper
           </a>
 
           <a href="/rss.xml">RSS</a>
+          */}
         </SiteFooterNav>
       </div>
     </footer>
@@ -100,4 +109,3 @@ const SiteFooterNav = styled.nav`
     }
   }
 `;
-

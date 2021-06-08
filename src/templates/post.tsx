@@ -20,7 +20,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
-import { PostTags } from '../components/PostTags';
+import { TagList } from '../components/TagList';
 
 export interface Author {
   id: string;
@@ -224,9 +224,22 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                         </span>
                       </div>
                     </section>
+                    <div
+                      style={{
+                        padding: '5px 20px',
+                        margin: '0px 0px',
+                        maxHeight: '100px',
+                        overflowY: 'auto',
+                      }}
+                    >
+                      <TagList
+                        tags={post.frontmatter.tags.slice(1)}
+                        primary={false}
+                        nowrap={false}
+                      />
+                    </div>
                   </section>
                 </PostFullByline>
-                <PostTags tags={post.frontmatter.tags.slice(1)} />
               </PostFullHeader>
 
               {post.frontmatter.image?.childImageSharp && (
