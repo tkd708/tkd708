@@ -1,17 +1,47 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require( 'path' );
+require( "dotenv" ).config()
+
 
 module.exports = {
     siteMetadata: {
         title: 'Naoya Takeda',
-        description: "Naoya Takeda's personal website demonstrates his blog posts, personal history and portfolio.",
-        siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+        description: "Naoya Takeda's personal website demonstrates his blog posts, personal history and portfolio. A PhD candidate (agricultural & environmental sciences) at Queensland University of Technology based in Brisbane, Australia.",
+        siteUrl: 'https://naoya-takeda.netlify.com', // full path to blog - no ending slash
     },
     mapping: {
         'MarkdownRemark.frontmatter.author': 'AuthorYaml',
     },
     plugins: [
-        'gatsby-plugin-sitemap',
+        {
+            resolve: 'gatsby-plugin-breadcrumb',
+            options: {
+                useAutoGen: true,
+                trailingSlashes: true,
+                defaultCrumb: {
+                    location: {
+                        pathname: '/',
+                    },
+                    crumbLabel: 'Home',
+                    crumbSeparator: ' / ',
+                },
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-sitemap',
+            options: {
+                output: '/sitemap.xml',
+                exclude: [],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://naoya-takeda.netlify.app',
+                sitemap: 'https://naoya-takeda.netlify.app/sitemap.xml',
+                policy: [ { userAgent: '*', allow: '/' } ],
+            },
+        },
         {
             resolve: 'gatsby-plugin-sharp',
             options: {
@@ -54,7 +84,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-canonical-urls',
             options: {
-                siteUrl: 'https://gatsby-casper.netlify.com',
+                siteUrl: 'https://naoya-takeda.netlify.app',
             },
         },
         'gatsby-plugin-typescript',
@@ -127,7 +157,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-google-analytics',
             options: {
-                trackingId: 'UA-XXXX-Y',
+                trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
                 // Puts tracking script in the head instead of the body
                 head: true,
                 // IP anonymization for GDPR compliance
