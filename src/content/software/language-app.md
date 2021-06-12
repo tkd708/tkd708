@@ -7,10 +7,9 @@ date: '2019-10-01T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
   - Expo
   - React Native
-  - Google API
+  - GCP
   - Unstated
   - Asyncstorage
 excerpt: A prototype of ios app for language learning, focusing on google API, Unstated and Asyncstorage.

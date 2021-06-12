@@ -7,8 +7,7 @@ date: '2020-03-21T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
-  - React Navigation
+  - react-navigation
   - Expo
   - React Native
 excerpt: Some technical notes on my first ios app "Life Report". This article focuses on React Navigtaion v5.

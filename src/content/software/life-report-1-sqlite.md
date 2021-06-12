@@ -7,10 +7,9 @@ date: '2019-11-18T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
-  - SQLite
   - Expo
   - React Native
+  - SQLite
 excerpt: Some technical notes on my first ios app "Life Report". This article focuses on expo-SQLite.
 ---
 

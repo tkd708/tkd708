@@ -7,11 +7,10 @@ image: ../img/contour-levee4.PNG
 date: '2020-07-17T10:00:00.000Z'
 tags:
   - Research
-  - Latin America and the Caribbean
+  - Latin America
   - Rice
   - Irrigation
-  - Contour-levee
-  - MSc
+  - MSc research
 draft: false
 excerpt: A brief introduction of contour-levee irrigation system, which is a land-management and irrigation practice for lowland rice cultivation in sloped fields and practiced commonly in a part of US, Latin America and the Caribbean.
 ---

@@ -7,7 +7,6 @@ date: '2020-03-21T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
   - react-native-chart-kit
   - Expo
   - React Native

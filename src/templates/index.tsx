@@ -145,6 +145,7 @@ const IndexPage: React.FC<IndexProps> = props => {
           className="site-header-background"
           style={{
             backgroundImage: `url('${props.data.header.childImageSharp.fixed.src}')`,
+            height: '70vh',
           }}
         >
           <div css={inner}>

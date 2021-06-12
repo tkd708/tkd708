@@ -7,10 +7,7 @@ date: '2020-03-22T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
   - FileSystem
-  - Sharing
-  - csv export
   - Expo
   - React Native
 excerpt: Some technical notes on my first ios app "Life Report". This article focuses on csv export using FileSystem and Sharing.

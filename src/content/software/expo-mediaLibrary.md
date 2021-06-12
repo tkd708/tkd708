@@ -7,10 +7,8 @@ date: '2020-07-25T23:46:37.121Z'
 draft: false
 tags:
   - Software
-  - Mobile App
   - Expo
   - React Native
-  - MediaLibrary
 excerpt: How to select multiple photos in React Native + Expo app using MediaLibrary... ImagePicker has been an easy and popular way to select a photo, but not able to select multiple photos.
 ---
 

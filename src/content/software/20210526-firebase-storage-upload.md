@@ -6,9 +6,10 @@ image: ../img/firebase-logo.png
 date: '2021-05-26T22:30:00'
 draft: false
 tags:
-  - Firebase
-  - ffmpeg
   - Software
+  - Firebase
+  - GCP
+  - ffmpeg
 excerpt: A use case of firebase functions - uploading audio files to firebase storage.
 ---
 

@@ -7,7 +7,7 @@ image: ../img/ghg-effect.jpg
 date: '2020-08-02T10:00:00.000Z'
 tags:
   - Research
-  - PhD
+  - PhD research
   - N2O
   - Denitrification
   - GHG

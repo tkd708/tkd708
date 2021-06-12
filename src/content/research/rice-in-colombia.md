@@ -7,10 +7,10 @@ image: ../img/colombia-rice-fedearroz68.jpg
 date: '2020-07-10T10:00:00.000Z'
 tags:
   - Research
-  - Latin America and the Caribbean
+  - Latin America
   - Colombia
   - Rice
-  - MSc
+  - MSc research
 draft: false
 excerpt: A brief introduction of rice production and cultivation in Colombia.
 ---

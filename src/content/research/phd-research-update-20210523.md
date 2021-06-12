@@ -6,14 +6,14 @@ image: ../img/briss-night-bridge.jpg
 date: '2021-05-23T10:00:00.000Z'
 tags:
   - Research
-  - PhD
+  - PhD research
   - Australia
   - Sugarcane
   - N fertiliser
   - N2O
   - GHG
   - NUE
-  - N fertiliser reocvery
+  - 15N
   - APSIM
 draft: false
 excerpt: It's been a while since I updated about my PhD research... here are some updates after finishing my 2nd year and future plans towards the end of my PhD research!

@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 import Grid from '@material-ui/core/Grid';
 
 export interface TagListProps {
-  tags: any[];
+  tags: any[]; // {name, count}
   primary: boolean;
   nowrap: boolean;
 }
@@ -18,10 +18,12 @@ export const TagList: React.FC<TagListProps> = ({ tags, primary, nowrap }) => {
         {tags.map((tag, index) => {
           return (
             <Grid item key={index}>
-              <Button variant={primary ? 'contained' : 'text'} css={Tag}>
-                <Link to={`/tags/${_.kebabCase(tag.name)}`}>
-                  {primary ? `${tag.name} (${tag.count})` : `#${tag.name}`}
-                </Link>
+              <Button
+                variant={primary ? 'contained' : 'text'}
+                css={Tag}
+                style={{ textTransform: 'none', fontSize: '14px' }}
+              >
+                <Link to={`/tags/${_.kebabCase(tag.name)}`}>{`${tag.name} (${tag.count})`}</Link>
               </Button>
             </Grid>
           );

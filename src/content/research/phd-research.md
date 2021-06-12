@@ -6,14 +6,14 @@ image: ../img/sugar4.png
 date: '2020-08-01T10:00:00.000Z'
 tags:
   - Research
-  - PhD
+  - PhD research
   - Australia
   - Sugarcane
   - N fertiliser
   - N2O
   - GHG
   - NUE
-  - N fertiliser reocvery
+  - 15N
   - APSIM
 draft: false
 excerpt: A summary of the articles related to my PhD research on N fertiliser rates and N2O emissions in Australian sugarcane systems.

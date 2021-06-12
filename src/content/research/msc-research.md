@@ -7,15 +7,14 @@ image: ../img/ibague_field2.jpg
 date: '2020-08-01T10:00:00.000Z'
 tags:
   - Research
-  - Latin America and the Caribbean
+  - Latin America
   - Colombia
   - Rice
   - Irrigation
-  - Contour-levee
   - Crop models
   - APSIM
   - Oryza
-  - MSc
+  - MSc research
 draft: false
 excerpt: A summary of the articles related to my MSc research on rice cultivation in Colombia.
 ---

@@ -49,7 +49,7 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'tkd708',
+  title: 'Naoya Takeda',
   description: "Naoya Takeda's personal website",
   coverImage: 'img/ibague_field2.jpg',
   logo: 'img/logo_initial2.png',

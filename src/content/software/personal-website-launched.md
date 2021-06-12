@@ -7,7 +7,6 @@ date: '2020-06-21T10:54:37.121Z'
 draft: false
 tags:
   - Software
-  - Web application
   - React
   - Gatsby
   - Netlify
