@@ -20,7 +20,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
-import { TagList } from '../components/TagList';
+import { TagListPost } from '../components/TagListPost';
 
 export interface Author {
   id: string;
@@ -232,7 +232,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                         overflowY: 'auto',
                       }}
                     >
-                      <TagList
+                      <TagListPost
                         tags={post.frontmatter.tags.slice(1)}
                         primary={false}
                         nowrap={false}
