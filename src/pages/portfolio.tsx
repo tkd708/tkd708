@@ -61,11 +61,16 @@ const Portfolio: React.FC = () => (
                 <h2> JOURNAL ARTICLES </h2>
                 <hr />
                 <p>
-                  Takeda, N., Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.,
-                  Increasing N rates increase fertiliser N loss, but not sugar yield - the fate of{' '}
-                  <sup>15</sup>N fertiliser in an intensive sugarcane system. Nutrient Cycling in
-                  Agroecosystems, (Under Review).
+                  Takeda, N., Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P., 2021. No
+                  sugar yield gains but larger fertiliser <sup>15</sup>N loss with increasing N
+                  rates in an intensive sugarcane system. Nutrient Cycling in Agroecosystems, .
                 </p>
+                <a href="https://doi.org/10.1007/s10705-021-10167-0">Publisher</a>
+                <p></p>
+                <a href="https://urldefense.com/v3/__https://rdcu.be/ct1VB__;!!NVzLfOphnbDXSw!VwVOMIth0StCicuggTstjh-SHSjultPXdzcmTj1NZpTxIs-YvPiBkWJhzj03I-6NfpO6viDE$">
+                  Private link
+                </a>
+                <p></p>
                 <p>
                   Takeda, N., Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P., 2021.
                   Exponential response of nitrous oxide (N<sub>2</sub>O) emissions to increasing
@@ -73,12 +78,14 @@ const Portfolio: React.FC = () => (
                   Ecosystems & Environment, 313:107376.
                 </p>
                 <a href="https://doi.org/10.1016/j.agee.2021.107376">Publisher </a>
+                <p></p>
                 <p>
                   Takeda, N., Lopez-Galvis, L., Pineda, D., Castilla, A., Takahashi, T., Fukuda, S.,
                   Okada, K., 2019. Evaluation of water dynamics of contour-levee irrigation system
                   in sloped rice fields in Colombia. Agricultural Water Management, 217:107–118.
                 </p>
                 <a href="https://doi.org/10.1016/j.agwat.2019.02.032">Publisher </a>
+                <p></p>
                 <p>
                   Takeda, N., Lopez-Galvis, L., Pineda, D., Castilla, A., Takahashi, T., Fukuda, S.,
                   Okada, K., 2019. Estimating Soil Water Contents from Field Water Tables for

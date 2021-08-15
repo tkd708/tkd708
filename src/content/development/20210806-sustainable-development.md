@@ -28,7 +28,7 @@ This is an introductory posts overviewing frameworks I'm going to investigate, s
 
 ## SDGs
 
-Needless to say, **Sustainable Development Goals** (SDGs) are the most well-known and universal agenda for sustainable development.
+Needless to say, **Sustainable Development Goals** (SDGs) are the most well-known and universal agenda for sustainable development, promising **"Leave No One Behind"**.
 
 There are **17 goals and 169 targets** to be achieved **by 2030**.
 These goals and targets as well as its bfief background are explained in UN's official website (https://sdgs.un.org/goals).
@@ -50,6 +50,15 @@ To overview the progress in SDGs, **Sustainable Development Report** has been re
 https://sdgindex.org/
 
 I will go through these goals one by one in future posts!
+
+ちなみに日本語でも既に SDGs に関してまとめた資料が豊富にオンライン公開されていますので是非ご参照ください (Some useful links in Japanese)。
+
+- https://www.mofa.go.jp/mofaj/gaiko/oda/sdgs/about/index.html
+- https://www.meti.go.jp/policy/trade_policy/sdgs/index.html
+- https://www.env.go.jp/policy/sdgs/index.html
+- https://www.sdg-s.jp/
+- https://www.iges.or.jp/en/pub/sdgs-business-practice/ja
+- https://imacocollabo.or.jp/about-sdgs/
 
 <br>
 
@@ -78,6 +87,7 @@ Since, my research topics are closely associated with these boundaries, I would 
 **Environmental, social and governance investing** (ESG investing) is a form of socially responsible investing that prioritizes financial returns alongside a company’s impact on the environment, its stakeholders, and the planet.
 
 ESG investing was suggested in **Principles for Responsible Investment** (https://www.unpri.org/) in 2006, moving the finantial sector globally towards more long-term evaluation of growth.
+https://www.forbes.com/sites/georgkell/2018/07/11/the-remarkable-rise-of-esg/?sh=bc7ba4a16951
 
 ESG investing has been rapidly growing by 143% over 2016-20 and mainly led by Europe and the US, reaching equivalent to US$25.2 trillion (or US$35.3 trillion as "sustainable investment", accounting for 36% of total assets!).
 http://www.gsi-alliance.org/
