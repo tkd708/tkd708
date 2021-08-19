@@ -49,6 +49,10 @@ Australia: https://sdgs.org.au/
 To overview the progress in SDGs, **Sustainable Development Report** has been reporting each country's achievements in each goal and target in depth and conprehensively.
 https://sdgindex.org/
 
+Also, Monash University and McMaster University offer a collection of studies relevant to SDGs (and more!) from all over the world.
+
+["Social System Evidence"](https://www.socialsystemsevidence.org/)
+
 I will go through these goals one by one in future posts!
 
 ちなみに日本語でも既に SDGs に関してまとめた資料が豊富にオンライン公開されていますので是非ご参照ください (Some useful links in Japanese)。
@@ -57,6 +61,7 @@ I will go through these goals one by one in future posts!
 - https://www.meti.go.jp/policy/trade_policy/sdgs/index.html
 - https://www.env.go.jp/policy/sdgs/index.html
 - https://www.sdg-s.jp/
+- https://www.jica.go.jp/aboutoda/sdgs/position_paper.html
 - https://www.iges.or.jp/en/pub/sdgs-business-practice/ja
 - https://imacocollabo.or.jp/about-sdgs/
 
