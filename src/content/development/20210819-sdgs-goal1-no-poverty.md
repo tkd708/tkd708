@@ -7,6 +7,7 @@ date: '2021-08-19T10:00:00.000Z'
 tags:
   - Development
   - SDGs
+  - Agriculture
 draft: false
 excerpt: SDGs Goal 1 is "No Poverty" - End poverty in all its forms everywhere
 ---
@@ -65,6 +66,8 @@ The link above also had got a brief report ["Why It Matters"](https://www.un.org
 
 > 包摂的成長とは成長の歩みとパターンの問題であるとして、何よりも高い経済成長が貧困をより大きく削減することを強調する。その根拠として、所得の伸びによって短期では貧困削減の７割が、長期では 97％が説明されてしまうという実証研究が紹介されている。
 
+JICA has got an excellent collection of reviews on international coorporation for development in Japanese...[開発協力文献レビュー](https://www.jica.go.jp/jica-ri/ja/publication/litreview/index.html)
+
 <br>
 
 ## How far are we?
@@ -85,6 +88,10 @@ Some of the key messages are...
 
 <br>
 
+...It's such a big topic obviously, I will read studies and reports relevant to this goal and keep updating this post!
+
+<br>
+
 ## Future prospectives?
 
 <br>
@@ -92,5 +99,3 @@ Some of the key messages are...
 ## How do my interests and career options relate with it?
 
 <br>
-
-...It's such a big topic obviously, I will read studies and reports relevant to this goal and keep updating this post!
