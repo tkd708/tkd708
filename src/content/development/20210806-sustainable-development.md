@@ -61,7 +61,7 @@ I will go through these goals one by one in future posts!
 - https://www.meti.go.jp/policy/trade_policy/sdgs/index.html
 - https://www.env.go.jp/policy/sdgs/index.html
 - https://www.sdg-s.jp/
-- ["17 ゴール別の JICA の取組"](https://www.jica.go.jp/aboutoda/sdgs/position_paper.html)
+- [17 ゴール別の JICA の取組](https://www.jica.go.jp/aboutoda/sdgs/position_paper.html)
 - https://www.iges.or.jp/en/pub/sdgs-business-practice/ja
 - https://imacocollabo.or.jp/about-sdgs/
 
