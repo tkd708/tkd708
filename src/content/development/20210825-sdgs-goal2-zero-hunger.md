@@ -7,6 +7,7 @@ date: '2021-08-25T10:00:00.000Z'
 tags:
   - Development
   - SDGs
+  - Agriculture
 draft: false
 excerpt: SDGs Goal 2 is "Zero Hunger" - End hunger, achieve food security and improved nutrition and promote sustainable agriculture
 ---
