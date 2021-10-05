@@ -63,7 +63,8 @@ const Portfolio: React.FC = () => (
                 <p>
                   Takeda, N., Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P., 2021. No
                   sugar yield gains but larger fertiliser <sup>15</sup>N loss with increasing N
-                  rates in an intensive sugarcane system. Nutrient Cycling in Agroecosystems, .
+                  rates in an intensive sugarcane system. Nutrient Cycling in Agroecosystems,
+                  121:99-113.
                 </p>
                 <a href="https://doi.org/10.1007/s10705-021-10167-0">Publisher</a>
                 <p></p>
@@ -109,7 +110,7 @@ const Portfolio: React.FC = () => (
                   Oral Presentation at Soil Science Australia and the New Zealand Society of Soil
                   Science Joint Conference, Cairns, Australia
                 </p>
-                <p css={TextRight}>June 2021 (To be held)</p>
+                <p css={TextRight}>29 June 2021</p>
                 <p>
                   Responses of fertiliser N recoveries to N fertiliser rates in a tropical sugarcane
                   system

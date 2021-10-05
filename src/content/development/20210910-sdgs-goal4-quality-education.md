@@ -7,7 +7,7 @@ date: '2021-09-10T10:00:00.000Z'
 tags:
   - Development
   - SDGs
-draft: true
+draft: false
 excerpt: SDGs Goal 4 is "Quality Education" - Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all
 ---
 
