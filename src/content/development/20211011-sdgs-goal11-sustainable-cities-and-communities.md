@@ -7,7 +7,7 @@ date: '2021-10-11T10:00:00.000Z'
 tags:
   - Development
   - SDGs
-draft: true
+draft: false
 excerpt: SDGs Goal 11 is "Sustainable Cities and Communities" - Make cities and human settlements inclusive, safe, resilient and sustainable
 ---
 

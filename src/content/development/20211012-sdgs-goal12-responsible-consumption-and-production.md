@@ -7,7 +7,7 @@ date: '2021-10-12T10:00:00.000Z'
 tags:
   - Development
   - SDGs
-draft: true
+draft: false
 excerpt: SDGs Goal 12 is "Responsible Consumption and Production" - Ensure sustainable consumption and production patterns
 ---
 
