@@ -209,8 +209,12 @@ const About: React.FC = () => (
                 <h2>AWARDS</h2>
                 <hr />
                 <p>
-                  Australian Government Research Training Program, from administered by Queensland
-                  University of Technology (Feb 2019)
+                  Green Talents 2021, from German Federal Ministry of Education and Research (BMBF)
+                  (Oct 2021)
+                </p>
+                <p>
+                  Australian Government Research Training Program, from Queensland University of
+                  Technology (Feb 2019)
                 </p>
                 <p>
                   Tobitate! Study Abroad Japan Program, from the Ministry of Education, Culture,
