@@ -7,7 +7,7 @@ date: '2021-10-21T10:00:00.000Z'
 tags:
   - Development
   - SDGs
-draft: true
+draft: false
 excerpt: SDGs Goal 5 is "Gender Equality" - Achieve gender equality and empower all women and girls
 ---
 
