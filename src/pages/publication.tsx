@@ -34,10 +34,10 @@ const PageTemplate = css`
   }
 `;
 
-const Portfolio: React.FC = () => (
+const Publication: React.FC = () => (
   <IndexLayout>
     <Helmet>
-      <title>Portfolio</title>
+      <title>Publication</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
@@ -51,12 +51,12 @@ const Portfolio: React.FC = () => (
         <div css={inner}>
           <article className="post page" css={[PostFull, NoImage]}>
             <PostFullHeader className="post-full-header">
-              <PostFullTitle className="post-full-title">Portfolio</PostFullTitle>
+              <PostFullTitle className="post-full-title">Publication</PostFullTitle>
             </PostFullHeader>
 
             <PostFullContent className="post-full-content">
               <div className="post-content">
-                <p>Here are my publication, developped softwares and project works.</p>
+                <p>Here are my research publication.</p>
 
                 <h2> JOURNAL ARTICLES </h2>
                 <hr />
@@ -100,7 +100,7 @@ const Portfolio: React.FC = () => (
                 <p>
                   Oral Presentation at 20th Australian Agronomy Conference, Toowoomba, Australia
                 </p>
-                <p css={TextRight}>Oct 2021 (To be held)</p>
+                <p css={TextRight}>Feb 2022 (to be held)</p>
                 <p>
                   Fertiliser <sup>15</sup>N loss increases in response to the N surplus in tropical
                   sugarcane systems
@@ -176,21 +176,6 @@ const Portfolio: React.FC = () => (
                 <a href="https://ciatshare.ciat.cgiar.org/sites/satreps_rice/publication/190404%20Technical%20Guide_EN.pdf">
                   Publisher{' '}
                 </a>
-                <h2> APPLICATION </h2>
-                <hr />
-                <h3>LangApp</h3>
-                <p>
-                  A web application records your English conversation and transcribes it. This app
-                  then analyses the conversation to provide advice and visualise your progress,
-                  supporting your English conversation practice!
-                </p>
-                <a href="https://langapp.netlify.app/">Website</a>
-                <h3>Life Report</h3>
-                <p>
-                  An ios application records time and money you spent and visualise them over time.
-                  This app helps you overview your spendings and design your life as you want!
-                </p>
-                <a href="https://apps.apple.com/il/app/life-report/id1503498113">App store</a>
               </div>
             </PostFullContent>
           </article>
@@ -205,4 +190,4 @@ const TextRight = css`
   text-align: right;
 `;
 
-export default Portfolio;
+export default Publication;
