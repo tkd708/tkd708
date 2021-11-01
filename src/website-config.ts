@@ -19,6 +19,7 @@ export interface WebsiteConfig {
   /**
    * full url, no username
    */
+  linkedin?: string;
   twitter?: string;
   /**
    * hide or show all email subscribe boxes
@@ -55,14 +56,15 @@ const config: WebsiteConfig = {
   logo: 'img/logo_initial2.png',
   lang: 'en',
   siteUrl: 'https://naoya-takeda.netlify.com',
-  facebook: 'https://www.facebook.com/ghost',
-  twitter: 'https://twitter.com/tryghost',
+  //facebook: 'https://www.facebook.com/ghost',
+  linkedin: 'https://www.linkedin.com/in/naoya-takeda-087710127/',
+  twitter: 'https://twitter.com/NaoyaTakedaAU',
   showSubscribe: true,
   mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'is based on Gatsby Casper',
+  footer: '',
 };
 
 export default config;

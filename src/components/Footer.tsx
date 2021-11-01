@@ -28,10 +28,9 @@ export const Footer: React.FC = () => {
           <Link to="/cv">CV</Link>
           <Link to="/publication">Publication</Link>
           <Link to="/software">Software</Link>
-          {/* 
-          {config.facebook && (
-            <a href={config.facebook} target="_blank" rel="noopener noreferrer">
-              Facebook
+          {config.linkedin && (
+            <a href={config.linkedin} target="_blank" rel="noopener noreferrer">
+              LinkedIn
             </a>
           )}
           {config.twitter && (
@@ -39,6 +38,7 @@ export const Footer: React.FC = () => {
               Twitter
             </a>
           )}
+          {/* 
           <a
             href="https://github.com/scttcper/gatsby-casper"
             target="_blank"
