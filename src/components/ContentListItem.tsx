@@ -14,6 +14,10 @@ export interface ContentListItemProps {
   subtitle2: string;
   subtitle3: string;
   description: string;
+  link1?: string;
+  linkAlt1?: string;
+  link2?: string;
+  linkAlt2?: string;
 }
 
 export const ContentListItem: React.FC<ContentListItemProps> = ({
@@ -23,21 +27,28 @@ export const ContentListItem: React.FC<ContentListItemProps> = ({
   subTitle2,
   subTitle3,
   description,
+  link1,
+  linkAlt1,
+  link2,
+  linkAlt2,
 }) => {
   return (
     <article css={PostCardStyles}>
       <PostCardContent>
-        <PostCardImage>{icon && <Img alt={`${title} cover image`} fixed={icon} />}</PostCardImage>
+        <PostCardImage>
+          {icon && <Img alt={`${title} cover image`} fixed={icon} imgStyle={PostCardImageStyles} />}
+        </PostCardImage>
         <PostCardHeader>
           <PostCardTitle>{title}</PostCardTitle>
           <PostCardSubTitle>{subTitle1}</PostCardSubTitle>
           <PostCardSubSubTitle>{subTitle2}</PostCardSubSubTitle>
           <PostCardSubSubTitle>{subTitle3}</PostCardSubSubTitle>
+          <p>
+            <a href={link1}>{linkAlt1}</a> <a href={link2}>{linkAlt2}</a>
+          </p>
         </PostCardHeader>
       </PostCardContent>
-      <PostCardExcerpt>
-        <p>{description}</p>
-      </PostCardExcerpt>
+      <PostCardExcerpt>{description}</PostCardExcerpt>
     </article>
   );
 };
@@ -51,7 +62,7 @@ const PostCardStyles = css`
   margin: 0 0 12px;
   padding: 0 12px 12px;
   min-height: 220px;
-  background-size: cover;
+  background-size: contain;
 `;
 
 const PostCardContent = styled.div`
@@ -66,7 +77,7 @@ const PostCardImage = styled.div`
   height: 150px;
   margin-right: 24px;
   background: ${colors.lightgrey} no-repeat center center;
-  background-size: cover;
+  background-size: contain;
 
   @media (max-width: 960px) {
   }
@@ -76,6 +87,20 @@ const PostCardImage = styled.div`
 
   @media (prefers-color-scheme: dark) {
     background: ${colors.darkmode};
+  }
+`;
+
+const PostCardImageStyles = css`
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+
+  @media (max-width: 960px) {
+  }
+
+  @media (max-width: 480px) {
+    width: 120px;
+    height: 120px;
   }
 `;
 
