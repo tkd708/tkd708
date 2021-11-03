@@ -1,11 +1,12 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/react';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
-import { PostFullContent } from '../components/PostContent';
+import { ContentListItem } from '../components/ContentListItem';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import {
@@ -34,7 +35,26 @@ const PageTemplate = css`
   }
 `;
 
-const Software: React.FC = () => (
+export interface SoftwareProps {
+  pageContext: {
+    currentPage: number;
+    numPages: number;
+  };
+  data: {
+    logo: {
+      childImageSharp: {
+        fixed: FixedObject;
+      };
+    };
+    header: {
+      childImageSharp: {
+        fixed: FixedObject;
+      };
+    };
+  };
+}
+
+const Software: React.FC<SoftwareProps> = props => (
   <IndexLayout>
     <Helmet>
       <title>Software</title>
@@ -53,28 +73,39 @@ const Software: React.FC = () => (
             <PostFullHeader className="post-full-header">
               <PostFullTitle className="post-full-title">Software</PostFullTitle>
             </PostFullHeader>
-
-            <PostFullContent className="post-full-content">
-              <div className="post-content">
-                <p>Here are the softwares I developed.</p>
-
-                <h2> APPLICATION </h2>
-                <hr />
-                <h3>LangApp</h3>
+            <h2> APPLICATION </h2>
+            <hr />
+            <ContentListItem
+              icon={props.data.langApp.childImageSharp.fixed}
+              title={'LangApp'}
+              subTitle1={''}
+              subTitle2={''}
+              subTitle3={''}
+              description={
                 <p>
                   A web application records your English conversation and transcribes it. This app
                   then analyses the conversation to provide advice and visualise your progress,
                   supporting your English conversation practice!
                 </p>
-                <a href="https://langapp.netlify.app/">Website</a>
-                <h3>Life Report</h3>
+              }
+              link1={'https://langapp.netlify.app/'}
+              linkAlt1={'Website'}
+            />
+            <ContentListItem
+              icon={props.data.lifeReport.childImageSharp.fixed}
+              title={'Life Report'}
+              subTitle1={''}
+              subTitle2={''}
+              subTitle3={''}
+              description={
                 <p>
                   An ios application records time and money you spent and visualise them over time.
                   This app helps you overview your spendings and design your life as you want!
                 </p>
-                <a href="https://apps.apple.com/il/app/life-report/id1503498113">App store</a>
-              </div>
-            </PostFullContent>
+              }
+              link1={'https://apps.apple.com/il/app/life-report/id1503498113'}
+              linkAlt1={'App store'}
+            />
           </article>
         </div>
       </main>
@@ -83,8 +114,30 @@ const Software: React.FC = () => (
   </IndexLayout>
 );
 
-const TextRight = css`
-  text-align: right;
+export const softwarePageQuery = graphql`
+  query softwarePageQuery {
+    header: file(relativePath: { eq: "img/qut-logo.png" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    langApp: file(relativePath: { eq: "img/langApp-icon.jpg" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    lifeReport: file(relativePath: { eq: "img/life-report-icon.png" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
 `;
 
 export default Software;

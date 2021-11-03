@@ -136,8 +136,4 @@ const About: React.FC = () => (
   </IndexLayout>
 );
 
-const TextRight = css`
-  text-align: right;
-`;
-
 export default About;

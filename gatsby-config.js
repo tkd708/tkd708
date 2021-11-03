@@ -142,7 +142,7 @@ module.exports = {
               }
             `,
                         output: '/rss.xml',
-                        title: 'Ghost\'s Blog',
+                        title: 'Naoya Takeda Home', //Ghost\'s Blog
                         match: '^/blog/',
                     },
                 ],
