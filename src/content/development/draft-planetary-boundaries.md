@@ -24,3 +24,8 @@ https://doi.org/10.1016/j.envsci.2018.10.002
 
 Steffen et al., 2015, Planetary boundaries: Guiding human development on a changing planet
 https://science.sciencemag.org/lookup/doi/10.1126/science.1259855
+
+## Nitrogen
+
+Kanter et al., 2020, A framework for nitrogen futures in the shared socioeconomic pathways
+https://doi.org/10.1016/j.gloenvcha.2019.102029

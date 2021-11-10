@@ -7,7 +7,7 @@ date: '2021-11-25T10:00:00.000Z'
 tags:
   - Development
   - SDGs
-draft: true
+draft: false
 excerpt: SDGs Goal 13 is "Climate Action" - Take urgent action to combat climate change and its impacts
 ---
 
@@ -89,8 +89,44 @@ The link above also had got a brief report ["Why It Matters"](https://www.un.org
 
 > An increasing number of countries are also prioritizing the formulation and implementation of national adaptation plans to boost their efforts to adjust to a changing climate. These include building flood defences, setting up early warning systems for cyclones, or switching to drought-resistant crops.
 
-Urgent action to combat climate change and its impacts (SDG 13): transforming agriculture and food systems
+["IPCC's working report"](https://www.ipcc.ch/working-group/wg1/) has got comprehensive descriptions regarding the relationship between greenhouse gas emissions and climate change. I summarised it in Japanese in the ["previous post"](https://naoya-takeda.netlify.app/research/20210813-ipcc-ar6/)
+
+<br>
+
+### Key studies
+
+Here are some key studies relevant to Goal 13.
+
+Co-benefits and trade-offs of climate change mitigation actions and the Sustainable Development Goals (Cohen et al., 2021)
+https://doi.org/10.1016/j.spc.2020.12.034
+
+<br>
+
+Urgent action to combat climate change and its impacts (SDG 13): transforming agriculture and food systems (Campbell et al., 2018)
 https://www.sciencedirect.com/science/article/pii/S1877343517302385
+
+> > Food system actions can have synergies and trade-offs, as illustrated by the case for nitrogen fertiliser. SDG 13 actions that reduce emissions can have positive impacts on other SDGs (e.g. 3, 6, 12, 14, 15); but such actions should not undermine the adaptation goals of SDG 13 and SDGs 1, 2, 5 and 10. Balancing trade-offs is thus crucial, with SDG 12 central: responsible consumption and production. Transformative actions in food systems are needed to achieve SDG 13 (and other SDGs), involving technical, policy, capacity enhancement and finance elements.
+
+<br>
+
+Finding and fixing food system emissions: the double helix ofscience and policy (Rosenzweig et al., 2021)
+https://iopscience.iop.org/article/10.1088/1748-9326/ac0134
+
+> > ...the food system isresponsible for between 21% and 37% of total GHGemissions caused by human activities.
+
+<br>
+
+Natural climate solutions (Griscom et al., 2017)
+https://doi.org/10.1073/pnas.1710465114
+
+> > “natural climate solutions” (NCS): 20 conservation, restoration, and/or improved land management actions that increase carbon storage and/or avoid greenhouse gas emissions across global forests, wetlands, grasslands, and agricultural lands. We show that NCS can provide over one-third of the cost-effective climate mitigation needed between now and 2030 to stabilize warming to below 2 °C.
+
+<br>
+
+The technological and economic prospects for CO2 utilization and removal (Hepburn et al., 2019)
+https://www.nature.com/articles/s41586-019-1681-6?proof=t
+
+> > Pathways that involve chemicals, fuels and microalgae might reduce emissions of carbon dioxide but have limited potential for its removal, whereas pathways that involve construction materials can both utilize and remove carbon dioxide. Land-based pathways can increase agricultural output and remove carbon dioxide. Our assessment suggests that each pathway could scale to over 0.5 gigatonnes of carbon dioxide utilization annually.
 
 <br>
 
