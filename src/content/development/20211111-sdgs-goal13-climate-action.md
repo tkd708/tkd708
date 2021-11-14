@@ -3,7 +3,7 @@ layout: post
 title: 'SDGs Goal 13 Climate Action'
 author: [Naoya]
 image: ../img/sdgs/sdgs-goal13.png
-date: '2021-11-25T10:00:00.000Z'
+date: '2021-11-11T10:00:00.000Z'
 tags:
   - Development
   - SDGs
