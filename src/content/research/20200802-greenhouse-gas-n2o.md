@@ -8,9 +8,9 @@ date: '2020-08-02T10:00:00.000Z'
 tags:
   - Research
   - PhD research
-  - N2O
+  - Nitrous oxide
   - Denitrification
-  - GHG
+  - Greenhouse gas
 draft: false
 excerpt: A brief introduction of a potent greenhouse gas, N2O.
 ---

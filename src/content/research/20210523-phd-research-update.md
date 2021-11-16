@@ -10,8 +10,8 @@ tags:
   - Australia
   - Sugarcane
   - N fertiliser
-  - N2O
-  - GHG
+  - Nitrous oxide
+  - Greenhouse gas
   - NUE
   - 15N
   - APSIM
