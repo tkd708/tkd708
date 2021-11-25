@@ -8,13 +8,14 @@ import Grid from '@material-ui/core/Grid';
 export interface TagListProps {
   tags: any[]; // {name, count}
   primary: boolean;
+  direction: string;
   nowrap: boolean;
 }
 
-export const TagList: React.FC<TagListProps> = ({ tags, primary, nowrap }) => {
+export const TagList: React.FC<TagListProps> = ({ tags, primary, direction, nowrap }) => {
   return (
     <div css={TagListContainer}>
-      <Grid container spacing={1} direction="row" wrap={nowrap ? 'nowrap' : 'wrap'}>
+      <Grid container spacing={1} direction={direction} wrap={nowrap ? 'nowrap' : 'wrap'}>
         {tags.map((tag, index) => {
           return (
             <Grid item key={index}>

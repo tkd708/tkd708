@@ -26,7 +26,8 @@ import {
 import config from '../website-config';
 import { PageContext } from './post';
 import _ from 'lodash';
-import { TagList } from '../components/TagList';
+//import { TagList } from '../components/TagList';
+import { HomeSideContent } from '../components/HomeSideContent';
 
 export interface IndexProps {
   pageContext: {
@@ -167,42 +168,30 @@ const IndexPage: React.FC<IndexProps> = props => {
           </div>
         </div>
         <main id="site-main" css={[SiteMain, outer]}>
-          <div css={[inner, Posts]}>
-            <div css={[PostFeed]}>
-              <div
-                style={{
-                  padding: '5px 20px',
-                  margin: '10px 0px',
-                  maxHeight: '100px',
-                  overflowY: 'auto',
-                }}
-              >
-                <TagList tags={allCategories} primary nowrap={false} />
+          <div
+            css={[inner, Posts]}
+            style={{
+              display: 'flex',
+              flexDirection: 'row-reverse',
+              justifyContent: 'space-between',
+            }}
+          >
+            <HomeSideContent categories={allCategories} tags={allTags} />
+
+            <div css={[PostFeed, PostFeedWidthLimit]}>
+              <div>
+                <p css={FeedTitle}>Latest posts</p>
+                {props.data.allMarkdownRemark.edges.map((post, index) => {
+                  // filter by tags
+                  // filter out drafts in production
+                  return (
+                    (post.node.frontmatter.draft !== true ||
+                      process.env.NODE_ENV !== 'production') && (
+                      <PostCard key={post.node.fields.slug} post={post.node} large={index === 0} />
+                    )
+                  );
+                })}
               </div>
-
-              <div
-                style={{
-                  padding: '5px 20px',
-                  margin: '10px 0px',
-                  maxHeight: '100px',
-                  overflowY: 'auto',
-                }}
-              >
-                <TagList tags={allTags} primary={false} nowrap={false} />
-              </div>
-
-              <p css={FeedTitle}>Latest posts</p>
-
-              {props.data.allMarkdownRemark.edges.map((post, index) => {
-                // filter by tags
-                // filter out drafts in production
-                return (
-                  (post.node.frontmatter.draft !== true ||
-                    process.env.NODE_ENV !== 'production') && (
-                    <PostCard key={post.node.fields.slug} post={post.node} large={index === 0} />
-                  )
-                );
-              })}
             </div>
           </div>
         </main>
@@ -368,6 +357,12 @@ const FeedTitle = css`
 
   @media (max-width: 500px) {
     font-size: 3rem;
+  }
+`;
+
+const PostFeedWidthLimit = css`
+  @media (min-width: 750px) {
+    width: 75%;
   }
 `;
 

@@ -13,7 +13,7 @@ export const outer = css`
 // Centered content container blocks
 export const inner = css`
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1200px;
   width: 100%;
 `;
 
@@ -70,7 +70,7 @@ export const PostFeed = css`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -20px;
+  margin: 0 -10px;
   padding: 50px 0 0;
   background: #fff;
 
