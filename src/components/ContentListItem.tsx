@@ -136,6 +136,7 @@ const PostCardSubSubTitle = styled.p`
 
 const PostCardExcerpt = styled.section`
   font-family: Georgia, serif;
+  text-align: justify;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */

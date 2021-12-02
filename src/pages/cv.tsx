@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { FixedObject } from 'gatsby-image';
+import Img, { FluidObject } from 'gatsby-image';
 
 import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { lighten, setLightness } from 'polished';
 
 import { ContentListItem } from '../components/ContentListItem';
 import { Footer } from '../components/Footer';
@@ -19,7 +21,7 @@ import {
   SiteMain,
   SiteNavMain,
 } from '../styles/shared';
-import { NoImage, PostFull, PostFullHeader, PostFullTitle } from '../templates/post';
+import { NoImage, PostFull, PostFullHeader, PostFullTitle, PostFullImage } from '../templates/post';
 import { colors } from '../styles/colors';
 
 const PageTemplate = css`
@@ -71,10 +73,25 @@ const CV: React.FC<CvProps> = props => (
       </header>
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>
         <div css={inner}>
-          <article className="post page" css={[PostFull, NoImage]}>
-            <PostFullHeader className="post-full-header">
-              <PostFullTitle className="post-full-title">Naoya Takeda</PostFullTitle>
-            </PostFullHeader>
+          <article className="post page" css={[PostFull]}>
+            <AboutHeader className="post-full-header">
+              {props.data.portrait.childImageSharp.fixed && (
+                <PortraitImage>
+                  <Img
+                    style={{ height: 'auto', width: '100%', position: 'initial' }}
+                    fluid={props.data.portrait.childImageSharp.fixed}
+                    alt={'Portrait'}
+                  />
+                </PortraitImage>
+              )}
+              <BioContainer>
+                <PostFullTitle className="post-full-title">Naoya Takeda</PostFullTitle>
+                <AboutExcerpt className="post-full-custom-excerpt">
+                  {`Mr Naoya Takeda is currently pursuing PhD in the Sustainable Agriculture program at the Centre for Agriculture and the Bioeconomy (Queensland University of Technology). His expertise lies in agronomy and environmental sciences with research experiences in rice, sugarcane and grain cropping systems. His research focuses on nitrogen (N) use efficiency and N losses including nitrous oxide (N2O), with a particular interest in the mechanisms and drivers of N transformation processes in the soil. His approach combines field trials using the automated greenhouse gas (GHG) monitoring system and 15N-labelled fertiliser as well as simulation analyses using cropping system models such as APSIM. He aims at providing agronomic and environmental assessments of cropping systems and supporting the decisions of farmers and policymakers to mitigate and adapt to climate change. `}
+                </AboutExcerpt>
+              </BioContainer>
+            </AboutHeader>
+
             <h2>EDUCATION</h2>
             <hr />
             <ContentListItem
@@ -300,9 +317,9 @@ const CV: React.FC<CvProps> = props => (
 
 export const cvPageQuery = graphql`
   query cvPageQuery {
-    header: file(relativePath: { eq: "img/qut-logo.png" }) {
+    portrait: file(relativePath: { eq: "img/naoya-portrait.jpg" }) {
       childImageSharp {
-        fixed(width: 150, height: 150, quality: 100) {
+        fixed(width: 1000, height: 1000, quality: 100) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -373,3 +390,99 @@ export const cvPageQuery = graphql`
   }
 `;
 export default CV;
+
+const AboutHeader = styled.header`
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 50px 50px 50px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: 1170px) {
+  }
+
+  @media (max-width: 800px) {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    flex-direction: column;
+  }
+
+  @media (max-width: 500px) {
+    padding: 20px 0 20px;
+  }
+`;
+
+const PortraitImage = styled.figure`
+  margin: 24px 12px 24px 12px;
+  //height: 500px;
+  width: 50%;
+  background: ${colors.lightgrey} center center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+
+  @media (max-width: 1170px) {
+    border-radius: 0;
+    img {
+      max-width: 1170px;
+    }
+  }
+  @media (max-width: 800px) {
+    height: 400px;
+    width: 100%;
+    align-self: center;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 4vw;
+    height: 350px;
+  }
+`;
+
+const BioContainer = styled.div`
+  margin: 24px 12px 24px 12px;
+  color: var(--midgrey);
+  //height: 500px;
+  width: 50%;
+
+  @media (max-width: 1170px) {
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    align-self: center;
+    //height: 400px;
+  }
+
+  @media (max-width: 500px) {
+  }
+
+  @media (prefers-color-scheme: dark) {
+    /* color: color(var(--midgrey) l(+10%)); */
+    color: ${lighten('0.1', colors.midgrey)};
+  }
+`;
+
+const AboutExcerpt = styled.p`
+  color: var(--midgrey);
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.4em;
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 24px;
+
+  @media (max-width: 800px) {
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    /* color: color(var(--midgrey) l(+10%)); */
+    color: ${lighten('0.1', colors.midgrey)};
+  }
+`;

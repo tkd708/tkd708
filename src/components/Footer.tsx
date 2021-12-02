@@ -24,7 +24,6 @@ export const Footer: React.FC = () => {
          */}
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
-          <Link to="/about">About</Link>
           <Link to="/cv">CV</Link>
           <Link to="/publication">Publication</Link>
           <Link to="/software">Software</Link>

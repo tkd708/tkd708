@@ -435,7 +435,7 @@ export const PostFullTitle = styled.h1`
   }
 `;
 
-const PostFullImage = styled.figure`
+export const PostFullImage = styled.figure`
   margin: 25px 0 50px;
   height: 800px;
   background: ${colors.lightgrey} center center;
@@ -460,7 +460,7 @@ const PostFullImage = styled.figure`
 `;
 
 export const query = graphql`
-  query($slug: String, $primaryTag: String) {
+  query ($slug: String, $primaryTag: String) {
     logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
       childImageSharp {
         fixed {
