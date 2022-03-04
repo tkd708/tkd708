@@ -80,7 +80,7 @@ const CV: React.FC<CvProps> = props => (
                   <Img
                     style={{ height: 'auto', width: '100%', position: 'initial' }}
                     fluid={props.data.portrait.childImageSharp.fixed}
-                    alt={'Portrait'}
+                    alt="Portrait"
                   />
                 </PortraitImage>
               )}
@@ -96,10 +96,10 @@ const CV: React.FC<CvProps> = props => (
             <hr />
             <ContentListItem
               icon={props.data.qut.childImageSharp.fixed}
-              title={'Queensland University of Technology'}
-              subTitle1={'Ph.D. Candidate'}
-              subTitle2={'Feb 2019 - Present'}
-              subTitle3={'Brisbane, Australia'}
+              title="Queensland University of Technology"
+              subTitle1="Ph.D. Candidate"
+              subTitle2="Feb 2019 - Present"
+              subTitle3="Brisbane, Australia"
               description={
                 <p>
                   Research topic is "Denitrification losses in response to nitrogen fertiliser rates
@@ -110,10 +110,10 @@ const CV: React.FC<CvProps> = props => (
             />
             <ContentListItem
               icon={props.data.uTokyo.childImageSharp.fixed}
-              title={'University of Tokyo'}
-              subTitle1={'Master of Science in Agricultural Development'}
-              subTitle2={'Sept. 2016 - Aug. 2018'}
-              subTitle3={'Tokyo, Japan'}
+              title="University of Tokyo"
+              subTitle1="Master of Science in Agricultural Development"
+              subTitle2="Sept. 2016 - Aug. 2018"
+              subTitle3="Tokyo, Japan"
               description={
                 <p>
                   The study was conducted in International Program in Agricultural Development
@@ -125,10 +125,10 @@ const CV: React.FC<CvProps> = props => (
             />
             <ContentListItem
               icon={props.data.uSheffield.childImageSharp.fixed}
-              title={'University of Sheffield'}
-              subTitle1={'University-wide Exchange Program'}
-              subTitle2={'Sept. 2015 - July 2016'}
-              subTitle3={'Sheffield, UK'}
+              title="University of Sheffield"
+              subTitle1="University-wide Exchange Program"
+              subTitle2="Sept. 2015 - July 2016"
+              subTitle3="Sheffield, UK"
               description={
                 <p>
                   A University-wide Exchange Program for one year. The subjects were Economics,
@@ -138,10 +138,10 @@ const CV: React.FC<CvProps> = props => (
             />
             <ContentListItem
               icon={props.data.uTokyo.childImageSharp.fixed}
-              title={'University of Tokyo'}
-              subTitle1={'Bachelor of Science in Agriculture'}
-              subTitle2={'Apr. 2012 - Sept. 2016'}
-              subTitle3={'Tokyo, Japan'}
+              title="University of Tokyo"
+              subTitle1="Bachelor of Science in Agriculture"
+              subTitle2="Apr. 2012 - Sept. 2016"
+              subTitle3="Tokyo, Japan"
               description={
                 <p>
                   Thesis title was "Analysis of the applicability of alternate wetting and drying
@@ -156,12 +156,10 @@ const CV: React.FC<CvProps> = props => (
             <hr />
             <ContentListItem
               icon={props.data.qut.childImageSharp.fixed}
-              title={'Research Assisstant'}
-              subTitle1={
-                'Centre for Agriculture and the Bioeconomy, Queensland University of Technology'
-              }
-              subTitle2={'Mar. 2021 – Dec. 2021'}
-              subTitle3={'Brisbane, Australia'}
+              title="Research Assisstant"
+              subTitle1="Centre for Agriculture and the Bioeconomy, Queensland University of Technology"
+              subTitle2="Mar. 2021 – Dec. 2021"
+              subTitle3="Brisbane, Australia"
               description={
                 <p>
                   Working in a Grain Research & Development Corporation (GRDC) project to examine
@@ -174,10 +172,10 @@ const CV: React.FC<CvProps> = props => (
             />
             <ContentListItem
               icon={props.data.ciat.childImageSharp.fixed}
-              title={'Visiting Researcher'}
-              subTitle1={'International Center of Tropical Agriculture (CIAT)'}
-              subTitle2={'Aug. 2017 – Mar. 2018'}
-              subTitle3={'Cali, Colombia'}
+              title="Visiting Researcher"
+              subTitle1="International Center of Tropical Agriculture (CIAT)"
+              subTitle2="Aug. 2017 – Mar. 2018"
+              subTitle3="Cali, Colombia"
               description={
                 <p>
                   Worked in a project SATREPS between Japan and Colombia to develop and to
@@ -194,10 +192,10 @@ const CV: React.FC<CvProps> = props => (
             />
             <ContentListItem
               icon={props.data.basf.childImageSharp.fixed}
-              title={'Marketing Research Intern'}
-              subTitle1={'BASF Japan'}
-              subTitle2={'Feb. 2017 – Apr. 2017'}
-              subTitle3={'Tokyo, Japan'}
+              title="Marketing Research Intern"
+              subTitle1="BASF Japan"
+              subTitle2="Feb. 2017 – Apr. 2017"
+              subTitle3="Tokyo, Japan"
               description={
                 <p>
                   Worked in a project to revise the strategy of pesticide marketing of BASF Japan
@@ -217,10 +215,10 @@ const CV: React.FC<CvProps> = props => (
             <hr />
             <ContentListItem
               icon={props.data.greenTalents.childImageSharp.fixed}
-              title={'Green Talents 2021'}
-              subTitle1={'German Federal Ministry of Education and Research (BMBF)'}
-              subTitle2={'Oct 2021'}
-              subTitle3={''}
+              title="Green Talents 2021"
+              subTitle1="German Federal Ministry of Education and Research (BMBF)"
+              subTitle2="Oct 2021"
+              subTitle3=""
               description={
                 <p>
                   Every year, the German Federal Ministry of Education and Research (BMBF) hosts the
@@ -234,15 +232,15 @@ const CV: React.FC<CvProps> = props => (
                   research elite.
                 </p>
               }
-              link1={'https://www.greentalents.de/'}
-              linkAlt1={'Program website'}
+              link1="https://www.greentalents.de/"
+              linkAlt1="Program website"
             />
             <ContentListItem
               icon={props.data.auGov.childImageSharp.fixed}
-              title={'Australian Government Research Training Program'}
-              subTitle1={'Queensland University of Technology'}
-              subTitle2={'Feb 2019'}
-              subTitle3={''}
+              title="Australian Government Research Training Program"
+              subTitle1="Queensland University of Technology"
+              subTitle2="Feb 2019"
+              subTitle3=""
               description={
                 <p>
                   The Research Training Program (RTP) is administered by individual universities on
@@ -256,17 +254,15 @@ const CV: React.FC<CvProps> = props => (
                   (HDRs).
                 </p>
               }
-              link1={'https://www.dese.gov.au/research-block-grants/research-training-program'}
-              linkAlt1={'Program website'}
+              link1="https://www.dese.gov.au/research-block-grants/research-training-program"
+              linkAlt1="Program website"
             />
             <ContentListItem
               icon={props.data.tobitate.childImageSharp.fixed}
-              title={'Tobitate! Study Abroad Japan Program'}
-              subTitle1={
-                'Japanese Ministry of Education, Culture, Sports, Science and Technology (MEXT)'
-              }
-              subTitle2={'July 2017'}
-              subTitle3={''}
+              title="Tobitate! Study Abroad Japan Program"
+              subTitle1="Japanese Ministry of Education, Culture, Sports, Science and Technology (MEXT)"
+              subTitle2="July 2017"
+              subTitle3=""
               description={
                 <p>
                   Tobitate! (Leap for Tomorrow) Study Abroad Initiative is led by Japan’s Ministry
@@ -279,24 +275,24 @@ const CV: React.FC<CvProps> = props => (
                   succeed in tomorrow’s world.
                 </p>
               }
-              link1={'https://tobitate.mext.go.jp/about/english.html'}
-              linkAlt1={'Program website'}
+              link1="https://tobitate.mext.go.jp/about/english.html"
+              linkAlt1="Program website"
             />
             <ContentListItem
               icon={props.data.uTokyo.childImageSharp.fixed}
-              title={'Promoting Doctoral Course Programs'}
-              subTitle1={'Graduate School of Agriculture and Life Science, University of Tokyo'}
-              subTitle2={'July 2017'}
-              subTitle3={''}
-              description={<p></p>}
+              title="Promoting Doctoral Course Programs"
+              subTitle1="Graduate School of Agriculture and Life Science, University of Tokyo"
+              subTitle2="July 2017"
+              subTitle3=""
+              description=""
             />
             <ContentListItem
               icon={props.data.jasso.childImageSharp.fixed}
-              title={'Scholarship program for postgraduates'}
-              subTitle1={'Japan Student Services Organization'}
-              subTitle2={'Sept. 2016'}
-              subTitle3={''}
-              description={<p></p>}
+              title="Scholarship program for postgraduates"
+              subTitle1="Japan Student Services Organization"
+              subTitle2="Sept. 2016"
+              subTitle3=""
+              description=""
             />
             <br />
             <h2>LANGUAGES</h2>

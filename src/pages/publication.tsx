@@ -76,6 +76,30 @@ const Publication: React.FC<PublicationProps> = props => (
             <h2> JOURNAL ARTICLES </h2>
             <hr />
             <ContentListItem
+              icon={props.data.plantsoil.childImageSharp.fixed}
+              title={
+                <p>
+                  Interaction between soil and fertiliser nitrogen (N) drives plant N uptake and
+                  nitrous oxide (N<sub>2</sub>O) emissions in tropical sugarcane systems
+                </p>
+              }
+              subTitle1={
+                <p>
+                  <u>
+                    <b>Takeda, N.</b>
+                  </u>
+                  , Friedl, J., Kirkby, R., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
+                </p>
+              }
+              subTitle2="Under review"
+              subTitle3="Plant and soil"
+              description=""
+              link1="https://www.researchsquare.com/article/rs-1249386/v1"
+              linkAlt1="Pre-print"
+              link2=""
+              linkAlt2=""
+            />
+            <ContentListItem
               icon={props.data.nca.childImageSharp.fixed}
               title={
                 <p>
@@ -91,15 +115,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2={'13 August 2021'}
-              subTitle3={'Nutrient Cycling in Agroecosystems, 121:99-113'}
-              description={<p></p>}
-              link1={'https://doi.org/10.1007/s10705-021-10167-0'}
-              linkAlt1={'Publisher'}
-              link2={
-                'https://urldefense.com/v3/__https://rdcu.be/ct1VB__;!!NVzLfOphnbDXSw!VwVOMIth0StCicuggTstjh-SHSjultPXdzcmTj1NZpTxIs-YvPiBkWJhzj03I-6NfpO6viDE$'
-              }
-              linkAlt2={'Private Link'}
+              subTitle2="13 August 2021"
+              subTitle3="Nutrient Cycling in Agroecosystems, 121:99-113"
+              description=""
+              link1="https://doi.org/10.1007/s10705-021-10167-0"
+              linkAlt1="Publisher"
+              link2="https://urldefense.com/v3/__https://rdcu.be/ct1VB__;!!NVzLfOphnbDXSw!VwVOMIth0StCicuggTstjh-SHSjultPXdzcmTj1NZpTxIs-YvPiBkWJhzj03I-6NfpO6viDE$"
+              linkAlt2="Private Link"
             />
             <ContentListItem
               icon={props.data.agee.childImageSharp.fixed}
@@ -117,13 +139,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2={'15 June 2021'}
-              subTitle3={'Agriculture, Ecosystems & Environment, 313:107376'}
-              description={<p></p>}
-              link1={'https://doi.org/10.1016/j.agee.2021.107376'}
-              linkAlt1={'Publisher'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="15 June 2021"
+              subTitle3="Agriculture, Ecosystems & Environment, 313:107376"
+              description=""
+              link1="https://doi.org/10.1016/j.agee.2021.107376"
+              linkAlt1="Publisher"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.agwm.childImageSharp.fixed}
@@ -141,13 +163,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Lopez-Galvis, L., Pineda, D., Castilla, A., Takahashi, T., Fukuda, S., Okada, K.
                 </p>
               }
-              subTitle2={'20 May 2019'}
-              subTitle3={'Agricultural Water Management, 217:107–118'}
-              description={<p></p>}
-              link1={'https://doi.org/10.1016/j.agwat.2019.02.032'}
-              linkAlt1={'Publisher'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="20 May 2019"
+              subTitle3="Agricultural Water Management, 217:107–118"
+              description=""
+              link1="https://doi.org/10.1016/j.agwat.2019.02.032"
+              linkAlt1="Publisher"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.ecb.childImageSharp.fixed}
@@ -165,17 +187,41 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Lopez-Galvis, L., Pineda, D., Castilla, A., Takahashi, T., Fukuda, S., Okada, K.
                 </p>
               }
-              subTitle2={'01 April 2019'}
-              subTitle3={'Environmental Control in Biology, 57:15–21'}
-              description={<p></p>}
-              link1={'https://doi.org/10.2525/ecb.57.15'}
-              linkAlt1={'Publisher'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="01 April 2019"
+              subTitle3="Environmental Control in Biology, 57:15–21"
+              description=""
+              link1="https://doi.org/10.2525/ecb.57.15"
+              linkAlt1="Publisher"
+              link2=""
+              linkAlt2=""
             />
             <br />
             <h2> CONFERENCE PROCEEDING & PRESENTATION </h2>
             <hr />
+            <ContentListItem
+              icon={props.data.wscg22.childImageSharp.fixed}
+              title={
+                <p>
+                  Interaction between soil and fertiliser nitrogen (N) drives plant N uptake and
+                  nitrous oxide (N<sub>2</sub>O) emissions in tropical sugarcane systems
+                </p>
+              }
+              subTitle1={
+                <p>
+                  <u>
+                    <b>Takeda, N.</b>
+                  </u>
+                  , Friedl, J., Kirkby, R., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
+                </p>
+              }
+              subTitle2="July 2022 (to be held)"
+              subTitle3="22nd World Congress of Soil Science in Glasgow, UK"
+              description="Poster presentation"
+              link1="https://22wcss.org/"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
+            />
             <ContentListItem
               icon={props.data.agroAu.childImageSharp.fixed}
               title={
@@ -192,15 +238,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2={'Feb 2022 (to be held)'}
-              subTitle3={
-                '20th Australian Agronomy Conference (Oral presentation) in Toowoomba, Australia'
-              }
-              description={<p></p>}
-              link1={'https://agronomyconference.com/'}
-              linkAlt1={'Conference website'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="Sept. 2022 (to be held)"
+              subTitle3="20th Australian Agronomy Conference in Toowoomba, Australia"
+              description="Oral presentation"
+              link1="https://agronomyconference.com/"
+              linkAlt1="Conference website"
+              link2="http://agronomyaustraliaproceedings.org/images/sampledata/2022/NutrientsAndFertility/ASAtakeda_n_447s.pdf"
+              linkAlt2="Conference proceedings"
             />
             <ContentListItem
               icon={props.data.soilAuNz.childImageSharp.fixed}
@@ -218,15 +262,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2={'29 June 2021'}
-              subTitle3={
-                'Soil Science Australia and the New Zealand Society of Soil Science Joint Conference (Oral presentation) in Cairns, Australia'
-              }
-              description={<p></p>}
-              link1={'https://www.soilscienceaustralia.org.au/2021-joint-conference/program/'}
-              linkAlt1={'Conference website'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="29 June 2021"
+              subTitle3="Soil Science Australia and the New Zealand Society of Soil Science Joint Conference in Cairns, Australia"
+              description="Oral presentation"
+              link1="https://www.soilscienceaustralia.org.au/2021-joint-conference/program/"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.apsim.childImageSharp.fixed}
@@ -244,15 +286,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., Biggs, J., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2={'Nov. 2020 (Cancelled)'}
-              subTitle3={'APSIM symposium 2020 (Oral presentation) in Brisbane, Australia'}
-              description={<p></p>}
-              link1={
-                'https://www.apsim.info/support/apsim-symposium-and-advanced-training-workshops/apsim-symposium/program/'
-              }
-              linkAlt1={'Conference website'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="Nov. 2020 (Cancelled due to COVID-19)"
+              subTitle3="APSIM symposium 2020 in Brisbane, Australia"
+              description="Oral presentation"
+              link1="https://www.apsim.info/support/apsim-symposium-and-advanced-training-workshops/apsim-symposium/program/"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.cssj.childImageSharp.fixed}
@@ -270,15 +310,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Lopez-Galvis, L., Pineda, D., Castilla, A., Takahashi, T., Fukuda, S., Okada, K.
                 </p>
               }
-              subTitle2={'6 Sept. 2018'}
-              subTitle3={
-                'Crop Science Society of Japan 246th Annual Meeting (Oral presentation) in Hokkaido, Japan'
-              }
-              description={<p></p>}
-              link1={'https://www.jstage.jst.go.jp/article/jcsproc/246/0/246_20/_article/-char/en'}
-              linkAlt1={'Conference website'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="6 Sept. 2018"
+              subTitle3="Crop Science Society of Japan 246th Annual Meeting in Hokkaido, Japan"
+              description="Oral presentation"
+              link1="https://www.jstage.jst.go.jp/article/jcsproc/246/0/246_20/_article/-char/en"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.cssj.childImageSharp.fixed}
@@ -296,15 +334,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Yamamuro, M., Takahashi, T., Okada, K.
                 </p>
               }
-              subTitle2={'29 Mar. 2017'}
-              subTitle3={
-                'Crop Science Society of Japan 243rd Annual Meeting (Oral presentation) in Tokyo, Japan'
-              }
-              description={<p></p>}
-              link1={'https://www.jstage.jst.go.jp/article/jcsproc/243/0/243_118/_article/-char/en'}
-              linkAlt1={'Conference website'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="29 Mar. 2017"
+              subTitle3="Crop Science Society of Japan 243rd Annual Meeting in Tokyo, Japan"
+              description="Oral presentation"
+              link1="https://www.jstage.jst.go.jp/article/jcsproc/243/0/243_118/_article/-char/en"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
             />
             <br />
             <h2> PROJECT REPORTS </h2>
@@ -327,17 +363,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Castilla, A., Garces, G.
                 </p>
               }
-              subTitle2={'2019, Cali, Colombia'}
-              subTitle3={
-                'In Development and Adoption of Latin American Low-Input Rice Production System through Genetic Improvement and Advanced Field-Management Technologies - Technical Guide'
-              }
-              description={<p></p>}
-              link1={
-                'https://ciatshare.ciat.cgiar.org/sites/satreps_rice/publication/190404%20Technical%20Guide_EN.pdf'
-              }
-              linkAlt1={'Publisher'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="2019, Cali, Colombia"
+              subTitle3="In Development and Adoption of Latin American Low-Input Rice Production System through Genetic Improvement and Advanced Field-Management Technologies - Technical Guide"
+              description=""
+              link1="https://ciatshare.ciat.cgiar.org/sites/satreps_rice/publication/190404%20Technical%20Guide_EN.pdf"
+              linkAlt1="Publisher"
+              link2=""
+              linkAlt2=""
             />
             <ContentListItem
               icon={props.data.satreps.childImageSharp.fixed}
@@ -356,17 +388,13 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Lopez-Galvis, L., Takahashi, T., Yamamuro, M., Castilla, A., Garces, G.
                 </p>
               }
-              subTitle2={'2019, Cali, Colombia'}
-              subTitle3={
-                'In Development and Adoption of Latin American Low-Input Rice Production System through Genetic Improvement and Advanced Field-Management Technologies - Technical Guide'
-              }
-              description={<p></p>}
-              link1={
-                'https://ciatshare.ciat.cgiar.org/sites/satreps_rice/publication/190404%20Technical%20Guide_EN.pdf'
-              }
-              linkAlt1={'Publisher'}
-              link2={''}
-              linkAlt2={''}
+              subTitle2="2019, Cali, Colombia"
+              subTitle3="In Development and Adoption of Latin American Low-Input Rice Production System through Genetic Improvement and Advanced Field-Management Technologies - Technical Guide"
+              description=""
+              link1="https://ciatshare.ciat.cgiar.org/sites/satreps_rice/publication/190404%20Technical%20Guide_EN.pdf"
+              linkAlt1="Publisher"
+              link2=""
+              linkAlt2=""
             />
           </article>
         </div>
@@ -379,6 +407,13 @@ const Publication: React.FC<PublicationProps> = props => (
 export const publicationPageQuery = graphql`
   query publicationPageQuery {
     header: file(relativePath: { eq: "img/qut-logo.png" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    plantsoil: file(relativePath: { eq: "img/plant-soil-cover.png" }) {
       childImageSharp {
         fixed(width: 150, height: 150, quality: 100) {
           ...GatsbyImageSharpFixed
@@ -407,6 +442,13 @@ export const publicationPageQuery = graphql`
       }
     }
     ecb: file(relativePath: { eq: "img/envir-contr-bio-cover.jpg" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    wscg22: file(relativePath: { eq: "img/wscg22.jpg" }) {
       childImageSharp {
         fixed(width: 150, height: 150, quality: 100) {
           ...GatsbyImageSharpFixed

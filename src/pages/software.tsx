@@ -76,35 +76,34 @@ const Software: React.FC<SoftwareProps> = props => (
             <h2> APPLICATION </h2>
             <hr />
             <ContentListItem
+              icon={props.data.delta.childImageSharp.fixed}
+              title="Delta"
+              subTitle1=""
+              subTitle2=""
+              subTitle3=""
+              description="An ios application designed for Japanese English learners. Delta records and analyse your English conversation so that you can see your progress visually!"
+              link1="https://apps.apple.com/sa/app/delta/id1587466473"
+              linkAlt1="App store"
+            />
+            <ContentListItem
               icon={props.data.langApp.childImageSharp.fixed}
-              title={'LangApp'}
-              subTitle1={''}
-              subTitle2={''}
-              subTitle3={''}
-              description={
-                <p>
-                  A web application records your English conversation and transcribes it. This app
-                  then analyses the conversation to provide advice and visualise your progress,
-                  supporting your English conversation practice!
-                </p>
-              }
-              link1={'https://langapp.netlify.app/'}
-              linkAlt1={'Website'}
+              title="LangApp"
+              subTitle1=""
+              subTitle2=""
+              subTitle3=""
+              description="A web application records your English conversation and transcribes it. This app then analyses the conversation to provide advice and visualise your progress, supporting your English conversation practice!"
+              link1="https://langapp.netlify.app/"
+              linkAlt1="Website"
             />
             <ContentListItem
               icon={props.data.lifeReport.childImageSharp.fixed}
-              title={'Life Report'}
-              subTitle1={''}
-              subTitle2={''}
-              subTitle3={''}
-              description={
-                <p>
-                  An ios application records time and money you spent and visualise them over time.
-                  This app helps you overview your spendings and design your life as you want!
-                </p>
-              }
-              link1={'https://apps.apple.com/il/app/life-report/id1503498113'}
-              linkAlt1={'App store'}
+              title="Life Report"
+              subTitle1=""
+              subTitle2=""
+              subTitle3=""
+              description="An ios application records time and money you spent and visualise them over time. This app helps you overview your spendings and design your life as you want!"
+              link1="https://apps.apple.com/il/app/life-report/id1503498113"
+              linkAlt1="App store"
             />
           </article>
         </div>
@@ -131,6 +130,13 @@ export const softwarePageQuery = graphql`
       }
     }
     lifeReport: file(relativePath: { eq: "img/life-report-icon.png" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    delta: file(relativePath: { eq: "img/delta-icon.png" }) {
       childImageSharp {
         fixed(width: 150, height: 150, quality: 100) {
           ...GatsbyImageSharpFixed
