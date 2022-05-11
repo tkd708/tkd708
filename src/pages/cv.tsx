@@ -156,17 +156,34 @@ const CV: React.FC<CvProps> = props => (
             <hr />
             <ContentListItem
               icon={props.data.qut.childImageSharp.fixed}
-              title="Research Assisstant"
+              title="Research Assistant"
+              subTitle1="Centre for Agriculture and the Bioeconomy, Queensland University of Technology"
+              subTitle2="Jan. 2022 – Present"
+              subTitle3="Brisbane, Australia"
+              description={
+                <p>
+                  Working for "Smart farming partnerships project - Unlocking the true values of
+                  organic soil amendments" project to develop an innovative farm-ready tool for the
+                  effective managament of manures and composts into farm fertiliser budgets for
+                  environmental, soil health and economic suutainability. Developping a web/mobile
+                  application to calculate nutrient release from organic amendments based on the
+                  incubation and field trial datasets from the project.
+                </p>
+              }
+            />
+            <ContentListItem
+              icon={props.data.qut.childImageSharp.fixed}
+              title="Research Assistant"
               subTitle1="Centre for Agriculture and the Bioeconomy, Queensland University of Technology"
               subTitle2="Mar. 2021 – Dec. 2021"
               subTitle3="Brisbane, Australia"
               description={
                 <p>
-                  Working in a Grain Research & Development Corporation (GRDC) project to examine
+                  Worked for a Grain Research & Development Corporation (GRDC) project to examine
                   fertiliser N use efficiency and N loss pathways in grain cropping systems in
                   Australia. Testing APSIM (Classic and Next Gen) against <sup>15</sup>N field
-                  trials datasets to simulate fertiliser N recovery and N losses Identifying the
-                  potential to improve algorithms related to N cyclying processes in APSIM
+                  trials datasets to simulate fertiliser N recovery and N losses. Identifying the
+                  potential to improve algorithms related to N cyclying processes in APSIM.
                 </p>
               }
             />

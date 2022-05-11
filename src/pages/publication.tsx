@@ -91,11 +91,11 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Kirkby, R., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2="Under review"
+              subTitle2="04 May 2022"
               subTitle3="Plant and soil"
               description=""
-              link1="https://www.researchsquare.com/article/rs-1249386/v1"
-              linkAlt1="Pre-print"
+              link1="https://doi.org/10.1007/s11104-022-05458-6"
+              linkAlt1="Publisher (Open Access)"
               link2=""
               linkAlt2=""
             />
