@@ -101,6 +101,8 @@ In many cases, the use of GLMs rather than log-transformation is recommended whi
 For independent variables ranging from 0 to 1, such as ratio or proportion, **beta regression family** can be applied.
 
 - https://stat.ethz.ch/R-manual/R-patched/library/mgcv/html/Beta.html
+- https://stats.stackexchange.com/questions/233366/how-to-fit-a-mixed-model-with-response-variable-between-0-and-1
+
 
 <br>
 
@@ -109,11 +111,20 @@ For independent variables ranging from 0 to 1, such as ratio or proportion, **be
 In mgcv, we can use Generalized Additive Mixed Models (GAMMs), a combination of "gam" and "lme4" instances to implement GAMs together with random effects.
 
 - https://stat.ethz.ch/R-manual/R-devel/library/mgcv/html/gamm.html
+- https://www.rdocumentation.org/packages/mgcv/versions/1.8-40/topics/gamm
 
-The syntax for random effect terms in mgcv is differnt from the "lmer" style.
+The syntax for random effect terms in mgcv::gamm is differnt from the "lmer" style.
 
 - https://stackoverflow.com/questions/25872488/how-to-add-a-random-intercept-and-random-slope-term-to-a-gamm-model-in-r
+
+Also, we can use mgcv::gam with random effect smooths by specifying s(X, bs="re").
+
 - https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/
+
+It should be noted that package incompatibilities are reported with bs="re"
+
+- https://stackoverflow.com/questions/67697378/error-in-model-matrix-formulaform-data-data-must-be-a-data-frame-while-do
+
 
 bs="fs"
 
@@ -145,6 +156,24 @@ One of them, **concurvity** is roughly equivalent to **multicollinearity** issue
 Checking the worst case is recommended and if the value is high (say, over 0.8), inspect your model more carefully.
 
 - https://stat.ethz.ch/R-manual/R-devel/library/mgcv/html/concurvity.html
+
+Model selection by an additional penalty term ("select"=TRUE)
+- https://people.bath.ac.uk/man54/SAMBa/ITTs/ITT2/EDF/WoodGAM.pdf
+- https://stats.stackexchange.com/questions/405129/model-selection-for-gam-in-r
+- https://osf.io/wgc4f/wiki/mgcv:%20model%20selection/
+- https://stackoverflow.com/questions/38571145/variable-selection-with-mgcv
+- https://stackoverflow.com/questions/52724440/how-to-see-the-performance-of-all-gam-models-when-model-select-true
+
+AIC vs deviance explained
+- https://stats.stackexchange.com/questions/325832/gam-mgcv-aic-vs-deviance-explained
+
+Convergence
+- https://astrostatistics.psu.edu/su07/R/html/mgcv/html/gam.convergence.html
+- https://astrostatistics.psu.edu/su07/R/html/mgcv/html/gam.outer.html
+- https://astrostatistics.psu.edu/su07/R/html/mgcv/html/gam.control.html
+- https://stats.stackexchange.com/questions/97834/warning-messages-from-mixed-model-glmer
+- https://stackoverflow.com/questions/60564119/convergence-issues-glmer-how-to-interpret-allfit-outcomes-and-comparing-models
+- https://stats.stackexchange.com/questions/304132/glmer-not-converging
 
 Some other tips should also be noted.
 
