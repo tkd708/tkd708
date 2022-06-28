@@ -6,7 +6,7 @@ require( "dotenv" ).config()
 module.exports = {
     siteMetadata: {
         title: 'Naoya Takeda',
-        description: "Naoya Takeda's personal website demonstrates his blog posts, personal history and portfolio. A PhD candidate (agricultural & environmental sciences) at Queensland University of Technology based in Brisbane, Australia.",
+        description: "Naoya Takeda's personal website demonstrates his blog posts, research publications and software development portfolio. A PhD candidate (agricultural & environmental sciences) at Queensland University of Technology based in Brisbane, Australia.",
         siteUrl: 'https://naoya-takeda.netlify.com', // full path to blog - no ending slash
     },
     mapping: {

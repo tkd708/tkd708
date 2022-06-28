@@ -51,7 +51,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Naoya Takeda',
-  description: "Naoya Takeda's personal website",
+  description: "Naoya Takeda - Agricultural & Environmental scientist",
   coverImage: 'img/ibague_field2.jpg',
   logo: 'img/logo_initial2.png',
   lang: 'en',
