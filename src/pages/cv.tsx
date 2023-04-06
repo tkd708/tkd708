@@ -87,10 +87,20 @@ const CV: React.FC<CvProps> = props => (
               <BioContainer>
                 <PostFullTitle className="post-full-title">Naoya Takeda</PostFullTitle>
                 <AboutExcerpt className="post-full-custom-excerpt">
-                  {`Mr Naoya Takeda is currently pursuing PhD in the Sustainable Agriculture program at the Centre for Agriculture and the Bioeconomy (Queensland University of Technology). His expertise lies in agronomy and environmental sciences with research experiences in rice, sugarcane and grain cropping systems. His research focuses on nitrogen (N) use efficiency and N losses including nitrous oxide (N2O), with a particular interest in the mechanisms and drivers of N transformation processes in the soil. His approach combines field trials using the automated greenhouse gas (GHG) monitoring system and 15N-labelled fertiliser as well as simulation analyses using cropping system models such as APSIM. He aims at providing agronomic and environmental assessments of cropping systems and supporting the decisions of farmers and policymakers to mitigate and adapt to climate change. `}
+                  {`Dr. Naoya Takeda is a post-doctoral researcher in the Sustainable Agriculture program at the Centre for Agriculture and the Bioeconomy (Queensland University of Technology). His expertise lies in agronomy and environmental sciences with research experiences in rice, sugarcane and grain and pasture systems. His research focuses on process understanding and upscaling of nitrogen (N) and carbon (C) cycling in agroecosystems, with particular interests in the key soil processes and drivers of greenhouse gas (CO2, N2O, CH4) emissions, N losses and C sequestration. His approach integrates laboratry and field measurements of C and N flows such as greenhouse gas emissions, 15N fertiliser recovery, denitrification losses, net ecosystem exchange with empirical and mechanistic (e.g. APSIM, LandscapeDNDC, DayCent) modelling approaches. He aims to agronomic and environmental assessments of agroecosystems and supporting the decisions of farmers and policymakers to mitigate and adapt to climate change. `}
                 </AboutExcerpt>
               </BioContainer>
             </AboutHeader>
+            <h2>CURRENT AFFILIATION</h2>
+            <hr />
+            <ContentListItem
+              icon={props.data.qut.childImageSharp.fixed}
+              title="Research Associate"
+              subTitle1="Centre for Agriculture and the Bioeconomy, Queensland University of Technology"
+              subTitle2="Nov. 2022 – Present"
+              subTitle3="Brisbane, Australia"
+              description={<p></p>}
+            />
 
             <h2>EDUCATION</h2>
             <hr />
@@ -98,7 +108,7 @@ const CV: React.FC<CvProps> = props => (
               icon={props.data.qut.childImageSharp.fixed}
               title="Queensland University of Technology"
               subTitle1="Ph.D. Candidate"
-              subTitle2="Feb 2019 - Present"
+              subTitle2="Feb 2019 - Feb 2023"
               subTitle3="Brisbane, Australia"
               description={
                 <p>
@@ -158,7 +168,7 @@ const CV: React.FC<CvProps> = props => (
               icon={props.data.qut.childImageSharp.fixed}
               title="Research Assistant"
               subTitle1="Centre for Agriculture and the Bioeconomy, Queensland University of Technology"
-              subTitle2="Jan. 2022 – Present"
+              subTitle2="Jan. 2022 – Oct. 2022"
               subTitle3="Brisbane, Australia"
               description={
                 <p>

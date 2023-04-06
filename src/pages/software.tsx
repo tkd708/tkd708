@@ -73,8 +73,18 @@ const Software: React.FC<SoftwareProps> = props => (
             <PostFullHeader className="post-full-header">
               <PostFullTitle className="post-full-title">Software</PostFullTitle>
             </PostFullHeader>
-            <h2> APPLICATION </h2>
+            <h2> APPLICATIONS </h2>
             <hr />
+            <ContentListItem
+              icon={props.data.oa_app.childImageSharp.fixed}
+              title="OA nutrient calculator app"
+              subTitle1=""
+              subTitle2=""
+              subTitle3=""
+              description="Organic Amendment Nutrient Calculator app is a web application which enables you to estimate the nutrient releases and budgets from soil, crop management and organic amendment information specified by yourself. This application is being developed within the project 'Unlocking the true value of organic soil amendments'"
+              link1="https://oa-nutrient-calculator.netlify.app/"
+              linkAlt1="Web application"
+            />
             <ContentListItem
               icon={props.data.delta.childImageSharp.fixed}
               title="Delta"
@@ -116,6 +126,13 @@ const Software: React.FC<SoftwareProps> = props => (
 export const softwarePageQuery = graphql`
   query softwarePageQuery {
     header: file(relativePath: { eq: "img/qut-logo.png" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    oa_app: file(relativePath: { eq: "img/oa_app_cover.png" }) {
       childImageSharp {
         fixed(width: 150, height: 150, quality: 100) {
           ...GatsbyImageSharpFixed

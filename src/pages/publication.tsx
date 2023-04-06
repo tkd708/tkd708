@@ -199,6 +199,32 @@ const Publication: React.FC<PublicationProps> = props => (
             <h2> CONFERENCE PROCEEDING & PRESENTATION </h2>
             <hr />
             <ContentListItem
+              icon={props.data.aeic.childImageSharp.fixed}
+              title={
+                <p>
+                  Temporal and spatial upscaling of denitrification losses - a synthesis of high
+                  temporal resolution N<sub>2</sub>O, in-situ <sup>15</sup>N<sub>2</sub>O and{' '}
+                  <sup>15</sup>N<sub>2</sub>O measurements and fertiliser <sup>15</sup>N recoveries
+                  and statistical models
+                </p>
+              }
+              subTitle1={
+                <p>
+                  <u>
+                    <b>Takeda, N.</b>
+                  </u>
+                  , Friedl, J., Kirkby, R., Rowlings, D., Grace, P.
+                </p>
+              }
+              subTitle2="14 Nov. 2022"
+              subTitle3="15th Australasian Environmental Isotope Conference in Balina, Australia"
+              description="Oral presentation"
+              link1="https://conferences.com.au/2022aeic/"
+              linkAlt1="Conference website"
+              link2=""
+              linkAlt2=""
+            />
+            <ContentListItem
               icon={props.data.wscg22.childImageSharp.fixed}
               title={
                 <p>
@@ -214,7 +240,7 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Kirkby, R., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2="July 2022 (to be held)"
+              subTitle2="2 Aug. 2022"
               subTitle3="22nd World Congress of Soil Science in Glasgow, UK"
               description="Poster presentation"
               link1="https://22wcss.org/"
@@ -238,7 +264,7 @@ const Publication: React.FC<PublicationProps> = props => (
                   , Friedl, J., Rowlings, D., De Rosa, D., Scheer, C., Grace, P.
                 </p>
               }
-              subTitle2="Sept. 2022 (to be held)"
+              subTitle2="Sept. 2022"
               subTitle3="20th Australian Agronomy Conference in Toowoomba, Australia"
               description="Oral presentation"
               link1="https://agronomyconference.com/"
@@ -442,6 +468,13 @@ export const publicationPageQuery = graphql`
       }
     }
     ecb: file(relativePath: { eq: "img/envir-contr-bio-cover.jpg" }) {
+      childImageSharp {
+        fixed(width: 150, height: 150, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    aeic: file(relativePath: { eq: "img/aeic.PNG" }) {
       childImageSharp {
         fixed(width: 150, height: 150, quality: 100) {
           ...GatsbyImageSharpFixed
